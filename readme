@@ -1,0 +1,77 @@
+#Decision Branching
+## if statement 
+  if ( condition1) { 
+   statement1
+  
+  }
+  
+  ## condition: Any expression that can only evaluate to true or false.
+  
+  ## Example: true 
+  false
+  
+  
+  ## comparison operators
+   inequality
+   >
+   <
+   >= 
+   <= 
+    equality
+    
+    ==
+    !=
+    ## example: m=5, n =6 
+    m > n
+    m < n
+    m == n
+    
+    ## Logical Operators
+    
+    && and
+    ||  or
+    ! not
+    
+    ## Example:
+    
+    (m > n ) || ( m < n)  true
+    
+    
+    ## BitWise Operators
+    
+    & and
+    |  or
+    ^ exclusive or
+    
+    decimal        binary
+    
+    0                0
+    
+    1                1
+    2                10
+    3                11
+    4                100
+    5                  101
+    6                   110
+    7                   111
+    8                  1000
+    
+    10 & 11 = 10
+    11 ! 11 = 11
+    10 ^ 11 = 01
+    
+    
+    ## else if ( conditon:) precedes the if, and it cannot stand by itself
+    ## else precedes the if statement and it cannot stand by itself
+    
+    if ( condition) {
+    Statement1}
+    
+    Else if ( condition2) {
+    
+    Statement2
+    }
+    
+    else {
+     statement3
+    }

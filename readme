@@ -1,39 +1,72 @@
-#Classes: Written description of the attributes and behaviors of an object
-#Attributes: instance variable
-## Behaviors: Instance methods
-## Constructors:  A special mehtod that shares the same name as the class
-## Setters:  Changes the value of the instance variables
-## Getters: Retrieve the values of the instance variables
-## equals: returns true if the values of the instance variables are the same, else returns false
-## toString: Returns the string representation of the object
+#Classes/Types/ADT:- a written description of the attributes and behaviors of an object
+Blueprint
+object- an instance of a class
+a physical representation of the blueprint
+Fields
+#Attributes : Instance Variables
+# Behaviors: Instance Methods
+##Syntax:
+
+accessModifier class NameofClass {
 
 
-UML Diagram
+}
 
------------
-Class name
-------- 
-- VariableName : data type
-- variableName : data type
-------------
-+ Constructor ()
- + setVariableName ( localVariableName: data type) : void 
-+ setVariableName ( localVariableName: data type) : void 
-+ getVariableName(): data type
+# Behaviors: Constructors, setters and getters, equals , toString, compareTo
+#Constructors: It is a special method that shares the same name as the class.
+ It initializes the instance variables and initializes the object.
+#Setters - mutators they modify the values of the instance variable
+# Getters: - Accessors, they retrieve the values of the instance variable
 
-------------------------
-Dog 
-----------
-name:   String
-age :   int 
-species: String
+# The four pillars of OOPL: Polymorphism, Encapuslation, Abstractions, inheritance
 
---------
+  - Polymorphism = poly = multiple ; morphism = fares;
+  
+  Encapsulation- limiting the access to data by encapusating it in private attributes and controlling access through setters and getters
 
-Constructors ()
-setters and getters
-equals (obj: Object:) boolean
-*toString(): String
-* meow (): void 
 
--------------
+#Behaviors: Constructors, setters and getters, equals, toString, compareTo
+
+#Constructors: special method that share the same name as the class, it does not have a return type, it initializes the instance
+variables and instances initialize the object
+#setters : mutators, they modify the values of the instance variables
+Getters: accessors , the retrieve the valuesof the instance variables
+
+#Four Pillars of OOPL: Polymorphism, Encapsulation,abstraction and inheritance
+
+- Polymorphism Poly = Multiple, morphirsm = fores;
+
+Encapsulation: lisitng the access to data by encapsulating it in private attributes and controlling access through getters and setters
+
+public class Mammal  {
+
+
+private int numOfLegs;
+private boolean hasFur;
+private String species;
+
+    public Mammal () {
+    
+    this.numOfLegs = 2;
+    this.hasFur = true;
+    this.species = "bear";
+    
+    
+    }
+    
+    public Mammal ( int numOfLegs, boolean hasFur, String species) {
+    
+    this.numOfLegs = numOfLegs;
+    this.hasFur = hasFur;
+    this. species = species;
+    
+    
+    }
+    
+    public void setNumOfLegs(int numOfLegs) {
+     this.numOfLegs = numOfLegs;
+     }
+     
+     public int getNumOfDogs(){
+       return this.numOfDogs();
+     }

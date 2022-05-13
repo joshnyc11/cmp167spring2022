@@ -1,72 +1,84 @@
-#Classes/Types/ADT:- a written description of the attributes and behaviors of an object
-Blueprint
-object- an instance of a class
-a physical representation of the blueprint
-Fields
-#Attributes : Instance Variables
-# Behaviors: Instance Methods
-##Syntax:
+# Array : Collection of elements of the same data type with a fixed size 
 
-accessModifier class NameofClass {
+#Defining an array 
 
+dataType [] 
+dataType []
+dataType[]
+
+# Index : start at zero, the first element of the array is in index zero
+
+#Examples:
+## Accessing arrays
+
+int [] numbers = new int [100];
+
+numbers [2] ----> 0
+
+[0,0,0,0,0,0,0 ........... 0]
+
+double [] numbers1 = new double [100];
+
+numbers1[2] -----> 0.0
+
+String [] names = {"Maria, Aris", "Galin", "Galena"};
+
+names [1] =
+names [2] =
+names [3] =
+
+
+
+
+int [] ages = {12,13,25,24,32,50,47};
+
+ages [0] ------> 12;
+ages [2] --------> 25;
+
+double [] balances = new double [] 2.56, 12/57, 36.57, 57.09);
+
+
+# Getting the length of the array 
+
+nameOfArray.length ---> 4
+numbers.length ----> 100
+
+# modify the element at a specific index:
+
+nameOfArray [index] newElement;
+names[3] = "Celine Dion", ----> { "Maria", "Arin", "Galin", "Celine Dion"};
+
+
+
+#Last Index
+
+names.length ----> 4
+lastIndex ----->
+lastIndex = length -1 ;
+
+names [ names.length - 1 ] ----> Celine Dion
+
+# Looping 
+
+
+for (int i = 0; i < names.length; i++) {
+
+
+System.out.println(names[i]);
 
 }
 
-# Behaviors: Constructors, setters and getters, equals , toString, compareTo
-#Constructors: It is a special method that shares the same name as the class.
- It initializes the instance variables and initializes the object.
-#Setters - mutators they modify the values of the instance variable
-# Getters: - Accessors, they retrieve the values of the instance variable
+for (String name: names ) {
 
-# The four pillars of OOPL: Polymorphism, Encapuslation, Abstractions, inheritance
+System.out.println(name);
+}
 
-  - Polymorphism = poly = multiple ; morphism = fares;
-  
-  Encapsulation- limiting the access to data by encapusating it in private attributes and controlling access through setters and getters
+# Displaying the array 
 
+Arrays.toString(names);
 
-#Behaviors: Constructors, setters and getters, equals, toString, compareTo
+}
 
-#Constructors: special method that share the same name as the class, it does not have a return type, it initializes the instance
-variables and instances initialize the object
-#setters : mutators, they modify the values of the instance variables
-Getters: accessors , the retrieve the valuesof the instance variables
-
-#Four Pillars of OOPL: Polymorphism, Encapsulation,abstraction and inheritance
-
-- Polymorphism Poly = Multiple, morphirsm = fores;
-
-Encapsulation: lisitng the access to data by encapsulating it in private attributes and controlling access through getters and setters
-
-public class Mammal  {
+#Displaying the array
 
 
-private int numOfLegs;
-private boolean hasFur;
-private String species;
-
-    public Mammal () {
-    
-    this.numOfLegs = 2;
-    this.hasFur = true;
-    this.species = "bear";
-    
-    
-    }
-    
-    public Mammal ( int numOfLegs, boolean hasFur, String species) {
-    
-    this.numOfLegs = numOfLegs;
-    this.hasFur = hasFur;
-    this. species = species;
-    
-    
-    }
-    
-    public void setNumOfLegs(int numOfLegs) {
-     this.numOfLegs = numOfLegs;
-     }
-     
-     public int getNumOfDogs(){
-       return this.numOfDogs();
-     }

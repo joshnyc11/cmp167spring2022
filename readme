@@ -1,84 +1,118 @@
-# Array : Collection of elements of the same data type with a fixed size 
+Loops : It is a block of code that repeats itself.
+# while loop
 
-#Defining an array 
+#Syntax :
 
-dataType [] 
-dataType []
-dataType[]
+while (condition) {
 
-# Index : start at zero, the first element of the array is in index zero
+statements
+}
 
-#Examples:
-## Accessing arrays
+## Sentinel Value
 
-int [] numbers = new int [100];
+- sentinel value is a value the while loop is always keeping an eye out for
 
-numbers [2] ----> 0
+###true
+it will run forever until there is a breaking condition inside
 
-[0,0,0,0,0,0,0 ........... 0]
+##Example 
 
-double [] numbers1 = new double [100];
+ while ( true) {
+ statements 
+ 
+  if (condition) {
+   flag = false;
+  }
 
-numbers1[2] -----> 0.0
+### flag
 
-String [] names = {"Maria, Aris", "Galin", "Galena"};
+a boolean value that is first set to true, and there is condition inside the loop that will change the value to false.
 
-names [1] =
-names [2] =
-names [3] =
+##
+example-
 
+while (flag) {
 
+Statements 
 
+if (condition) {
 
-int [] ages = {12,13,25,24,32,50,47};
-
-ages [0] ------> 12;
-ages [2] --------> 25;
-
-double [] balances = new double [] 2.56, 12/57, 36.57, 57.09);
-
-
-# Getting the length of the array 
-
-nameOfArray.length ---> 4
-numbers.length ----> 100
-
-# modify the element at a specific index:
-
-nameOfArray [index] newElement;
-names[3] = "Celine Dion", ----> { "Maria", "Arin", "Galin", "Celine Dion"};
-
-
-
-#Last Index
-
-names.length ----> 4
-lastIndex ----->
-lastIndex = length -1 ;
-
-names [ names.length - 1 ] ----> Celine Dion
-
-# Looping 
-
-
-for (int i = 0; i < names.length; i++) {
-
-
-System.out.println(names[i]);
+flag = false;
+  }
 
 }
 
-for (String name: names ) {
 
-System.out.println(name);
+### Incrementing
+- this while loop has a condition that will change as the variable inside (counter)will change the value of the flag 
+
+
+while ( n < 100 ) 
+
+n++;
+
+
+#do while loop
+
+do {
+
+statements 
+
 }
 
-# Displaying the array 
+while ( condition);
 
-Arrays.toString(names);
+##Semantics 
 
-}
+evaluate inner statements
+check the whole condition
+if condition is true go to step 1
+if condition is false end the loop
 
-#Displaying the array
+# for loop
+ 
+ ## Syntax:
+ 
+ for (   ) {
+ 
+ 
+ 
+ }
 
+
+start code :  initialization code
+stop code:  condition, if condition is false it will stop
+step code : incrementing code
+
+## semantics
+
+1 run start code for the first iteration only
+check step condition
+if condition is true, execute inner statements, and then go to step code. go to step 2
+if condition is false end the loop
+
+## example using accumulator pattern
+
+int num = 0;
+
+ for { int i = i; i <= 10; i++) {
+ 
+ 
+ sum = sum + i;
+ }
+
+2
+3
+4
+# for each loop
+
+String [] names = "Maria", "Akin" , "Julia"
+
+
+for : String tempName : names 
+
+System.out.println(tempName);
+# do while loop 
+
+this loop will at least repeat once without checking the condition
 

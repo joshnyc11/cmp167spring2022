@@ -1,118 +1,37 @@
-Loops : It is a block of code that repeats itself.
-# while loop
+##String Formatting
 
-#Syntax :
+format specifier
 
-while (condition) {
+%c for char
+% f for float and double
+% d int
+% b byte
+% s string
 
-statements
-}
-
-## Sentinel Value
-
-- sentinel value is a value the while loop is always keeping an eye out for
-
-###true
-it will run forever until there is a breaking condition inside
-
-##Example 
-
- while ( true) {
- statements 
- 
-  if (condition) {
-   flag = false;
-  }
-
-### flag
-
-a boolean value that is first set to true, and there is condition inside the loop that will change the value to false.
-
-##
-example-
-
-while (flag) {
-
-Statements 
-
-if (condition) {
-
-flag = false;
-  }
-
-}
+flags +0 + will display the + in front of the data , - left justify
+width- minimum amount of characters to display within data 
+precision point- for floating point values: how many decimal places after the point are going to be displayed
+precision point - for string literals: maximum amount of characters that you want to display: if data is bigger, data is going to be truncated.
 
 
-### Incrementing
-- this while loop has a condition that will change as the variable inside (counter)will change the value of the flag 
+##Syntax
+
+"
+"%(flag)(width)(.precision)specifier"
 
 
-while ( n < 100 ) 
 
-n++;
+## Example:
 
-
-#do while loop
-
-do {
-
-statements 
-
-}
-
-while ( condition);
-
-##Semantics 
-
-evaluate inner statements
-check the whole condition
-if condition is true go to step 1
-if condition is false end the loop
-
-# for loop
- 
- ## Syntax:
- 
- for (   ) {
- 
- 
- 
- }
+("The total is  $.2f ", 3.4) ---> the total is $ 3.40
+# printf()
 
 
-start code :  initialization code
-stop code:  condition, if condition is false it will stop
-step code : incrementing code
+System.out.printf("The total is  $.2f ", 3.4); ----> ---> the total is $ 3.40;
 
-## semantics
+# format()
 
-1 run start code for the first iteration only
-check step condition
-if condition is true, execute inner statements, and then go to step code. go to step 2
-if condition is false end the loop
-
-## example using accumulator pattern
-
-int num = 0;
-
- for { int i = i; i <= 10; i++) {
- 
- 
- sum = sum + i;
- }
-
-2
-3
-4
-# for each loop
-
-String [] names = "Maria", "Akin" , "Julia"
-
-
-for : String tempName : names 
-
-System.out.println(tempName);
-# do while loop 
-
-this loop will at least repeat once without checking the condition
+String message = String.format ("The total is  $.2f ", 3.4);  
+System.out.println(message);
+---> the total is $ 3.40
 
